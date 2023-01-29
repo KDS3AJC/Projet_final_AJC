@@ -8,12 +8,8 @@ test.describe("Test suite bank account", () => {
 
     test.beforeEach(async ({ page }) =>{
         await page.goto("http://localhost:3000/signin");
+        
     });
-
-    test("main navigation", async ({ page }) => {
-        // Assertions use the expect API.
-        await expect(page).toHaveURL("http://localhost:3000/signin");
-      });
 
     let firstname = faker.name.firstName()
     let lastname = faker.name.lastName()
@@ -25,6 +21,7 @@ test.describe("Test suite bank account", () => {
     let amount = faker.finance.amount(1, 500, 0)
 
     test('Sign up', async ({ page }) => {
+        
         await page.locator('[data-test="signup"]').click();
         await page.locator('[data-test="signup"]').click();//bag of application, need to click two times
         await page.getByLabel('First Name').fill(firstname);
@@ -37,6 +34,7 @@ test.describe("Test suite bank account", () => {
     });
 
     test('Sign in', async ({ page }) => {
+        await expect(page).toHaveURL("http://localhost:3000/signin");
         await page.type('[id="username"]', 'Katharina_Bernier');
         await page.type('[id="password"]', 's3cret');
         await page.locator('[data-test="signin-submit"]').click();
