@@ -1,3 +1,5 @@
+! BROULLION !
+
 Afin d'améliorer la qualité du système d'information de notre projet, nous avons décidé d'écrire plusieurs documents qui vont guider les différentes étapes du développement logiciel.
 Nous devons donc établir une stratégie de test adéquate à l'état du projet actuelle pour répondre au problématiques les plus importantes actuellement. Cette stratégie peut être ensuite amenée à évoluer par la suite suivant les besoins. Etant donné l'état actuel de l'application, nous pensons qu'une approche réactive et anti-régressions semble être la plus adaptée afin de garantir la stabilité. Nous avons déjà remonté plusieurs bugs par le biais de tests exploratoires et avancer dans ce sens semble être une bonne démarche pour épurer le plus gros des anomalies déjà existantes.
 
