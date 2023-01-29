@@ -1,0 +1,20 @@
+Afin d'améliorer la qualité du système d'information de notre projet, nous avons décidé d'écrire plusieurs documents qui vont guider les différentes étapes du développement logiciel.
+Nous devons donc établir une stratégie de test adéquate à l'état du projet actuelle pour répondre au problématiques les plus importantes actuellement. Cette stratégie peut être ensuite amenée à évoluer par la suite suivant les besoins. Etant donné l'état actuel de l'application, nous pensons qu'une approche réactive et anti-régressions semble être la plus adaptée afin de garantir la stabilité. Nous avons déjà remonté plusieurs bugs par le biais de tests exploratoires et avancer dans ce sens semble être une bonne démarche pour épurer le plus gros des anomalies déjà existantes.
+
+
+Périmètre: 
+
+Moyens de tests: (Répond au How ? des 6W) PC/Mac Chrome dernière version ?
+
+Environnements de tests: Dev / Recette / Préprod (optionnel pour tests de performance) / Prod (Répond au Where ? des 6W)
+
+Méthodologie / Procédure: Agile avec sprints de 2 semaines + déploiement de pipeline Jenkins CI/CD pour le test en continu. Etablir les Definition of Ready qui sont les conditions initiales nécessaires à l'éxecution des tests et le Definition of Done qui répondent aux critères d'acceptation, pour chaque sprint. (Répond au When ? des 6W)  Utilisation de tickets Jira pour remonter les anomalies. Ecriture des cas de test en Gherkin.
+
+Type de tests prévus: Manuels (fonctionnels / tests exploratoires) et automatiques (Cypress ou Playwright) 
+
+
+Définition des jeux de données: établir des jeux de données clairs et pertinents pour chaque cas de test
+
+Etablir les priorités et criticité des bugs: (Bloquant, majeur, normal, mineur)
+
+Parties prenantes: Quelles ressources humaines (Répond au Who ? des 6W) et techniques sont allouées pour quelles tâches. (Faire un scénario avec nous tous de répartition des tâches??)
