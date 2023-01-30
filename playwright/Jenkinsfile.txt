@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('install playwright') {
       steps {
-        bat 'C:\Program Files\nodejs\npm.cmd i -D @playwright/test'
+        bat 'C:/Program Files/nodejs/npm.cmd i -D @playwright/test'
         bat 'npx playwright install'
         bat 'npm install @faker-js/faker --save-dev'
       }
