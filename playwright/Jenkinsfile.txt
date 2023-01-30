@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('install playwright') {
       steps {
+        bat 'cd playwright'
         bat 'npm i -D @playwright/test'
         bat 'npx playwright install'
       }
     }
     stage('test') {
       steps {
-         bat 'dir'
          bat 'npx playwright test --list'
          bat 'npx playwright test'
       }
