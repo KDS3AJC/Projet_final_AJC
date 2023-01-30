@@ -9,8 +9,8 @@ pipeline {
     }
     stage('test') {
       steps {
-         bat 'npx playwright test --list'
-         bat 'npx playwright test'
+         bat 'npx playwright test tests\ --list'
+         bat 'npx playwright test tests\'
       }
       post {
         success {
