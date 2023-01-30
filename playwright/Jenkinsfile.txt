@@ -6,6 +6,7 @@ pipeline {
         bat 'cd playwright'
         bat 'npm i -D @playwright/test'
         bat 'npx playwright install'
+        bat 'npm install @faker-js/faker --save-dev'
       }
     }
     stage('test') {
