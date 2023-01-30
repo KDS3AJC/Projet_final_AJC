@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('install playwright') {
+    stage('Install Playwright and Faker') {
       steps {
-        bat '"C:/Program Files/nodejs/npm.cmd" i -D @playwright/test'
+        bat 'npm i -D @playwright/test'
         bat 'npx playwright install'
         bat 'npm install @faker-js/faker --save-dev'
       }
     }
-    stage('test') {
+    stage('Tests') {
       steps {
          bat 'npx playwright test --list'
          bat 'npx playwright test'
