@@ -15,8 +15,7 @@ pipeline {
       }
       post {
         success {
-          archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
-          bat 'remove *.png'
+          bat 'echo TESTS SUCCESSFULLY PASSED'
         }
       }
     }
