@@ -9,15 +9,13 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh '''
-          npx playwright test --list
-          npx playwright test
-        '''
+         bat 'npx playwright test --list'
+         bat 'npx playwright test'
       }
       post {
         success {
           archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
-          sh 'rm -rf *.png'
+          bat 'remove *.png'
         }
       }
     }
