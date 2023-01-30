@@ -54,7 +54,7 @@ Cypress.Commands.add("createBankAccount", (bankName, routingNumber, accountNumbe
   cy.get('[data-test="sidenav-bankaccounts"]').click();
   cy.url().should("include", "/bankaccounts"); // assertion
   cy.get('[data-test="bankaccount-new"]').click();
-  cy.url().should("include", "/bankaccount/new"); // assertion
+  cy.url().should("include", "/bankaccounts/new"); // assertion
   cy.get('[id="bankaccount-bankName-input"]').type(bankName);      
   cy.get('[id="bankaccount-routingNumber-input"]').type(routingNumber);
   cy.get('[id="bankaccount-accountNumber-input"]').type(accountNumber);
@@ -66,7 +66,7 @@ Cypress.Commands.add("loginFirstTime", (username,password,bankName, routingNumbe
   cy.get('[name="username"]').type(username);
   cy.get('[name="password"]').type(password);
   cy.get('.MuiButton-label').click(); // sign in
-  cy.wait(10000);
+  cy.wait(2000);
   cy.get('.MuiButton-label').eq(2).click(); // next
   cy.get('[id="bankaccount-bankName-input"]').type(bankName);
   cy.get('[id="bankaccount-routingNumber-input"]').type(routingNumber);
@@ -83,6 +83,4 @@ Cypress.Commands.add("newTransaction", (amount) => {
   cy.get('[id="transaction-create-description-input"]').type('Louer une voiture pour les vacances');
   cy.get('[data-test="transaction-create-submit-payment"]').click();
 });
-  
-  
   
