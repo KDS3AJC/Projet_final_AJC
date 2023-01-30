@@ -12,6 +12,7 @@ pipeline {
       steps {
          bat 'npx playwright test --list'
          bat 'npx playwright test --reporter=list'
+         bat 'npx playwright show-report'
       }
       post {
         success {
