@@ -7,17 +7,17 @@ Nous avons donc sollicité la société TTC testing afin de mieux comprendre nos
 
 Nous attendons de vous une offre de service incluant les sujets suivants
 
-•	Planification de l’amélioration de la qualité de notre système d’information Kévin
-•	Partitionnement de notre application en domaines fonctionnels Dan
+•	Planification de l’amélioration de la qualité de notre système d’information 
+•	Partitionnement de notre application en domaines fonctionnels 
 •	Rédaction de cahiers de test rigoureux et intelligents dans Jira Tous en cours
-•	Explication de l’avantage de votre solution Anastassia
-•	Une proposition de pack de tests automatiques repartis en typologies (régression et ou autre) Aude
-•	Un comparatif des solutions playwright et Cypress Jordan+Anastassia
-o	Vous nous proposerez 4 tests pertinents permettant dévaluer les outils  Jordan+Anastassia
-o	Vous nous présenterez 
-	le processus de développement Jonathan
-	Le processus d’exécution Dan
-	Le processus de Maintenance Jordan
-	Les rapports d’exécution Aude
-	L’interfaçage a un outil CI/CD au choix (Jenkins, Circle CI) Kévin
-o	Suivant votre choix vous nous indiquerez la durée d’un projet couvrant 90 % des fonctionnalités actuelles de notre application Tous en cours( Planning poker) Anastassia présentateur
+•	Explication de l’avantage de votre solution 
+•	Une proposition de pack de tests automatiques repartis en typologies (régression et ou autre)
+•	Un comparatif des solutions playwright et Cypress
+	Vous nous proposerez 4 tests pertinents permettant dévaluer les outils 
+	Vous nous présenterez :
+•	le processus de développement 
+•	Le processus d’exécution 
+• Le processus de Maintenance 
+•	Les rapports d’exécution 
+•	L’interfaçage a un outil CI/CD au choix (Jenkins, Circle CI) 
+•	Suivant votre choix vous nous indiquerez la durée d’un projet couvrant 90 % des fonctionnalités actuelles de notre application Tous en cours( Planning poker) 
